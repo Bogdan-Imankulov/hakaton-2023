@@ -1,0 +1,43 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+}
+
+.accordion-body {
+    padding: 15px;
+}
+
+.bg-success {
+    background-color: #bdfce5 !important;
+}
+
+#faqAccordion {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #27ae60 !important;
+    border: none !important;
+    width: 100%;
+}
+.btn-primary:active {
+    background-color: #1d8547 !important;
+}
+
+#pay-health {
+    margin-top: 10px;
+}
+
+.fixed-credit-text:first-of-type {
+    margin-bottom: 0;
+}

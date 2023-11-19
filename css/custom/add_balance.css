@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+.bg-success {
+    background-color: #27ae86 !important;
+    border-color: #27ae86 !important;
+}
+#card-data {
+    display: none;
+}
+#form-wrapper {
+    margin-top: 0 !important;
+}
+#return-back-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+    justify-self: start;
+    opacity: 0.5;
+}
+
+#button-container {
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    max-height: 5vh;
+    margin: 0;
+}
+h1 {
+    width: fit-content;
+    color: black;
+    opacity: 0.8;
+}
+#head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 64px);
+    margin-top: 7px;
+}
+#button-container {
+    margin-bottom: 20px;
+}
+button[type='submit'] {
+    width: 100%;
+}

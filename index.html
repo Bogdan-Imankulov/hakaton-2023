@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенческий Банк</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/custom/index.css">
+</head>
+<body>
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container container-fluid justify-content-lg-around" id="nav_container">
+        <a class="navbar-brand" href="#">BCC Bank</a>
+        <button class="navbar-toggler" id="nav_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="gap"></li>
+                <li class="nav-item">
+                    <a href="#" id="login">
+                        <img width="50" height="50"
+                             src="https://img.icons8.com/ios-filled/50/FFFFFF/user-male-circle.png"
+                             alt="user-male-circle"/>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Главный контент -->
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1 class="display-4">Добро пожаловать!</h1>
+        <p class="lead">Вы находитесь в банковском приложении. Здесь вы можете: </p>
+        <ul class="lead">
+            <li>
+                <p>
+                    Оформить кредит для образовательных целей.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Проверить счет студенческой карты.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Узнать когда поступит стипендия.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Внести изменения в документы.
+                </p>
+            </li>
+        </ul>
+        <hr class="my-4">
+        <p>Откройте счет прямо сейчас и получите доступ к широкому спектру банковских услуг.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Открыть счет</a>
+    </div>
+</div>
+
+<!-- Футер -->
+<footer class="bg-light mt-5 p-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2023 Студенческий Банк</p>
+            </div>
+            <div class="col-md-6 text-md-right">
+                <p>Контакты: info@studentbank.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        moveAuth();
+    });
+    function moveAuth() {
+    let collapsed = document.getElementsByClassName("collapse")[0];
+    let gap = document.getElementsByClassName("gap")[0];
+    let auth = document.getElementById("login");
+    if (screen.width < 1024) {
+        gap.style.width= "0";
+        collapsed.parentNode.insertBefore(auth, collapsed);
+        let wrapper = document.createElement("div");
+        wrapper.id = "auth_nav_wrapper";
+        let button = document.getElementById("nav_button");
+        button.parentNode.insertBefore(wrapper, button);
+        wrapper.append(auth, button);
+
+    }
+}
+
+
+</script>
+</body>
+</html>

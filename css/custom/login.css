@@ -1,0 +1,26 @@
+#main {
+    max-width: 100vw;
+    background-size: cover;
+    /*-webkit-filter: blur(1px);*/
+    /*filter: blur(1px);*/
+}
+#buttons {
+    margin-top: 10vw;
+    display: flex;
+}
+#login-button {
+    background-color: #27ae60;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 90vw;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+#register-button {
+    background-color: whitesmoke;
+    color: #27ae60;
+    text-decoration: none;
+    width: 90vw;
+    border-radius: 30px;
+    border: 1px solid #27ae60;
+}

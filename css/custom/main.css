@@ -1,0 +1,309 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw!important;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+.nav-link-colored {
+    color: white; /* Цвет ссылок в Bootstrap по умолчанию */
+}
+
+#return-back-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    align-self: start;
+    justify-self: start;
+    opacity: 0.5;
+}
+
+h1 {
+    width: fit-content;
+    color: black;
+    opacity: 0.8;
+}
+#my_bank {
+    background-color: rgba(19, 171, 132, 0.72);
+    color: white;
+    font-size: 32px;
+    height: 22vh;
+    align-items: center;
+    padding-top: 10px;
+    display: flex;
+}
+#balance-msg {
+    font-size: 15px;
+    margin: 0;
+}
+#main-actions {
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    border-top: 3px solid rgb(197, 197, 197);
+    padding-top: 3vh;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100vw;
+    background-color: rgba(19, 171, 132, 0.72);
+    padding-bottom: 3vh;
+}
+
+#main-actions .action {
+    padding-top: 15px;
+    color: white;
+}
+#main-actions .action img {
+    border: 2px solid #1c8a5c;
+    border-radius: 10px;
+    width: 80%;
+    padding: 15px;
+    background-color: white;
+}
+#main-actions .action {
+    padding: 5px;
+    border-radius: 10px;
+    width: 80px;
+    height: fit-content;
+}
+.action p {
+    font-size: 12px;
+    margin: 0;
+}
+#head-gap {
+    display: none;
+}
+@media (max-width: 426px) {
+    #head-gap {
+        width: 64px;
+        display: block;
+    }
+    #main-actions .action img {
+        padding: 0;
+        width: 30px;
+    }
+}
+@media (max-width: 768px) {
+
+    #main-actions .action {
+        width: 15vw;
+        height: 15vw;
+    }
+    #main-actions .action img {
+        width: 85px;
+        margin-bottom: 10px;
+    }
+    #main-actions .action p {
+        font-size: 25px;
+    }
+}
+@media (max-width: 600px) {
+    #main-actions .action img {
+        padding: 5px !important;
+        width: 55px ;
+    }
+    #main-actions .action p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    #main-actions .action {
+        margin: 0 10px 0;
+        height: fit-content !important;
+        width: fit-content !important;
+    }
+    #main-actions .action img {
+        margin-bottom: 0;
+        width: 70px!important;
+    }
+    #my_bank {
+        height: 16vh;
+    }
+    #main-actions .action p {
+        margin-bottom: 0;
+        font-size: 18px !important;
+    }
+    #main-actions {
+        display: grid!important;
+        grid-row-gap: 10px;
+        height: 30vh;
+    }
+    #requisites-button {
+        font-size: 12px !important;
+    }
+}
+#balance {
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.action {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+.action img {
+    /*margin-top: 10px;*/
+}
+.action p {
+    height: fit-content;
+}
+.left-action {
+    border-right: 1px solid rgba(110, 110, 110, 0.32);
+}
+.right-action {
+    border-left: 1px solid rgba(110, 110, 110, 0.32);
+}
+.center-action {
+    border-right: 1px solid rgba(110, 110, 110, 0.32);
+    border-left: 1px solid rgba(110, 110, 110, 0.32);
+}
+.top-action {
+    border-bottom: 1px solid rgba(110, 110, 110, 0.32);
+}
+.bottom-action {
+    border-top: 1px solid rgba(110, 110, 110, 0.32);
+}
+#row-actions {
+    border-top: 2px solid #27ae60;
+    /*border-bottom: 2px solid #27ae60;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 7vh;
+    padding-top: 1vh;
+    /*justify-self: end;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2vh;
+}
+#grid-actions {
+    border-top: 2px solid #27ae60;
+    border-bottom: 2px solid #27ae60;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 10vh;
+}
+#card-img {
+    width: 45vw;
+    max-width: 200px;
+    justify-self: start;
+}
+#my-card {
+    height: 18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+#card-data {
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    max-height: 17vh;
+}
+#card-data p {
+    margin-left: 2vw;
+    margin-bottom: 0;
+}
+
+#card-data h4 {
+    margin-bottom: 5px;
+}
+#bank-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: fit-content;
+    padding-left: 5vw;
+    height: 100%;
+    padding-top: 10px;
+}
+#balance-decimals {
+    font-size: 1.3rem;
+}
+#requisites-button {
+    font-size: 18px;
+    padding: 5px 0;
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #1c8a5c;
+    align-self: start;
+    width: 30vw;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+.darken {
+    background-color: rgba(0, 0, 0, 0.7); /* Цвет затемнения */
+}
+#darker {
+    z-index: -999;
+    width: 100vw;
+    height: 100vh;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    display: block;
+    position: absolute;
+    transition: background-color 1s ease;
+}
+#button-container {
+    margin-bottom: 0!important;
+}
+
+#requsities {
+    color: #27ae86;
+    position: absolute;
+    top: 64px;
+    opacity: 1;
+}
+#toast-head {
+    background-color: #ddd;
+    opacity: 1;
+}
+#toast-head-text {
+    color: #27ae86;
+    opacity: 1;
+}
+#toast-body-wrap {
+    background-color: #fff;
+    opacity: 1;
+}
+.toast-text {
+    font-size: inherit;
+    margin-bottom: 0;
+}
+#cvv.shown {
+    -webkit-text-security: none;
+}
+#cvv.hidden {
+    -webkit-text-security: disc;
+    font-size: 1.5em;
+}
+#eye {
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+}
+#cvv-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

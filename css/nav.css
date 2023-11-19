@@ -1,0 +1,36 @@
+
+#return-back-btn {
+    background-color: transparent!important;
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+    opacity: 0.5!important;
+}
+
+#button-container {
+    padding-top: 4px!important;
+    padding-left: 4px!important;
+    padding-right: 0!important;
+    border-radius: 10px!important;
+    max-height: 64px!important;
+    margin: 0 0 20px!important;
+    display: grid!important;
+    grid-template-columns: 40px 1fr 40px!important;
+    width: 100vw!important;
+    max-width: none!important;
+}
+#head-gap {
+    display: block!important;
+    width: 40px!important;
+    justify-self: end!important;
+    height: 40px!important;
+}
+#h1 {
+    width: fit-content!important;
+    color: black!important;
+    opacity: 0.8!important;
+    margin: 0!important;
+}
+#head {
+    justify-self: center!important;
+}
